@@ -10,7 +10,7 @@ The following diagram illustrates the interaction between the host and the STM32
   <img src="assets/bootloader_com_block.png" alt="Block Diagram Common"/>
   <div style="display: flex; justify-content: center;">
     <img src="assets/bootloader_task1_block.png" alt="Block Diagram for Bootloader Fetch Command" style="margin-right: 20px;"/>
-    <hr style="height: 100px; width: 2px; background-color: black; border: none;"/>
+    <vr style="height: 100px; width: 2px; background-color: black; border: none;"/>
     <img src="assets/bootloader_task2_block.png" alt="Block Diagram for Firmware Check Available" style="margin-left: 20px;"/>
   </div>
   
