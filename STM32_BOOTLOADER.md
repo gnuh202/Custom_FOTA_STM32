@@ -30,22 +30,22 @@ The following diagram illustrates the processing of the Bootloader program:
 ## Memory Map
 The bootloader uses a memory layout specific to each MCU type, specifically:
 - **For STM32F407VGTx**:
-  - `0x08000000`: Bootloader (Sector 0, 128 KB).
+  - `0x08000000`: Bootloader Firmware (Sector 0, 128 KB).
   - `0x08020000`: Metadata for Firmware (Sector 1, 128 KB).
-  - `0x08040000`: Firmware (Sectors 2-5, 512 KB).
+  - `0x08040000`: Application Firmware (Sectors 2-5, 512 KB).
 - **For STM32F765VGTx**:
-  - `0x08000000`: Bootloader (Sector 0, 128 KB).
+  - `0x08000000`: Bootloader Firmware (Sector 0, 128 KB).
   - `0x08020000`: Metadata for Firmware (Sector 1, 128 KB).
-  - `0x08040000`: Firmware (Sectors 2-5, 512 KB).
+  - `0x08040000`: Application Firmware (Sectors 2-5, 512 KB).
 - **For STM32F407VGTx**:
   - **Bank 1**:
-    - `0x08000000`: Bootloader (Sector 0, 128 KB).
+    - `0x08000000`: Bootloader Firmware (Sector 0, 128 KB).
     - `0x08020000`: Metadata for Firmware 1 (Sector 1, 128 KB).
-    - `0x08040000`: Firmware 1 (Sectors 2-5, 512 KB).
+    - `0x08040000`: Application Firmware 1 (Sectors 2-5, 512 KB).
   - **Bank 2**:
-    - `0x08100000`: Bootloader (Sector 0, 128 KB).
+    - `0x08100000`: Bootloader Firmware (Sector 0, 128 KB).
     - `0x08120000`: Metadata for Firmware 2 (Sector 1, 128 KB).
-    - `0x08140000`: Firmware 2 (Sectors 2-5, 512 KB).
+    - `0x08140000`: Application Firmware 2 (Sectors 2-5, 512 KB).
 
 ## Implementation Details
 - **Command Protocol**:
